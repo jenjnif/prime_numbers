@@ -15,7 +15,6 @@ def list_primes_to_index(index):
             x += 1
         else:
             x += 1
-    print(primes)
     return primes
 
 
@@ -34,3 +33,7 @@ def test_is_prime():
 
 def test_list_primes_to_index():
     assert list_primes_to_index(3) == [2, 3, 5, 7]
+
+
+def test_list_primes_to_index_two():
+    assert list_primes_to_index(7) == [2, 3, 5, 7, 11, 13, 17, 19]
