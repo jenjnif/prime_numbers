@@ -5,8 +5,18 @@
 # prime 2, 3, 5, 7, 11
 
 
-def list_primes_to_index(n):
-    pass
+def list_primes_to_index(index):
+    primes = []
+    x = 2
+    while len(primes) <= index:
+        if is_prime(x):
+            prime = is_prime(x)
+            primes.append(prime)
+            x += 1
+        else:
+            x += 1
+    print(primes)
+    return primes
 
 
 def is_prime(prime):
@@ -23,4 +33,4 @@ def test_is_prime():
 
 
 def test_list_primes_to_index():
-    assert list_primes_to_index(3) == [2, 3, 5]
+    assert list_primes_to_index(3) == [2, 3, 5, 7]
