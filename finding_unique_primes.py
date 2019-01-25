@@ -12,4 +12,4 @@ def is_prime(x):
 
 
 def test_list_prime_to_n():
-    assert is_prime(20) == [2, 3, 5, 7, 11, 13, 17, 19]
+    assert find_primes(20) == [2, 3, 5, 7, 11, 13, 17, 19]
