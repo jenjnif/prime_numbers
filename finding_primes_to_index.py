@@ -5,7 +5,7 @@
 # prime 2, 3, 5, 7, 11
 
 
-def find_primes_to_index(n):
+def list_primes_to_index(n):
     pass
 
 
@@ -20,3 +20,7 @@ def is_prime(prime):
 
 def test_is_prime():
     assert is_prime(5) == 5
+
+
+def test_list_primes_to_index():
+    assert list_primes_to_index(3) == [2, 3, 5]
