@@ -9,13 +9,9 @@ def find_primes_to_index(n):
     pass
 
 
-def is_prime(x):
-    prime = True
-    for i in range(2, x):
-        if x % i == 0:
-            prime = False
-    return prime
+def is_prime(prime):
+    pass
 
 
-def test_list_index_zero_prime():
-    assert find_primes_to_index(0) == [2]
+def test_is_prime():
+    assert is_prime(5) == 5
