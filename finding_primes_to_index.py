@@ -10,7 +10,12 @@ def find_primes_to_index(n):
 
 
 def is_prime(prime):
-    pass
+    is_prime = True
+    for i in range(2, prime):
+        if prime % i == 0:
+            is_prime = False
+    if is_prime is True:
+        return prime
 
 
 def test_is_prime():
