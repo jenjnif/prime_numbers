@@ -7,7 +7,8 @@ def unique_prime_factors(n):
     primes = []
     total = 1
     if n == 1:
-        return 0
+        primes = [1]
+        return primes
     for i in range(2, n):
         if is_prime(i):
             total = total * i
@@ -29,21 +30,27 @@ def is_prime(x):
 #     primes = []
 #     total = 1
 #     if n == 1:
-#         return 0
-#     for i in range(2, n):
+#         return len(primes)
+#     for i in range(2, n + 1):
 #         prime = True
 #         for multiple in range(2, i):
 #             if i % multiple == 0:
 #                 prime = False
 #         if prime is True:
 #             total = total * i
-#             if total < n:
+#             if total <= n:
 #                 primes.append(i)
-#     return primes
+#             else:
+#                 break
+#     return len(primes)
+
+
+# def test_unique_prime_factor():
+#     assert unique_prime_factors(2) == 1
 
 
 def test_return_prime():
-    assert is_prime(5) is True
+    assert is_prime(2) is True
 
 
 def test_unique_prime_factor():
