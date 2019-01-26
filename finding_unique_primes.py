@@ -13,8 +13,7 @@ def unique_prime_factors(n):
             total = total * i
             if total < n:
                 primes.append(i)
-    print(primes)
-    return(primes)
+    return primes
 
 
 def is_prime(x):
@@ -31,3 +30,7 @@ def test_return_prime():
 
 def test_unique_prime_factor():
     assert unique_prime_factors(20) == [2, 3]
+
+
+def test_unique_prime_factor_two():
+    assert unique_prime_factors(500) == [2, 3, 5, 7]
