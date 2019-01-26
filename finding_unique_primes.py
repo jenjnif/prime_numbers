@@ -27,22 +27,22 @@ def is_prime(x):
 # ALL IN ONE FUNCTION
 
 # def unique_prime_factors(n):
-#     primes = []
-#     total = 1
-#     if n == 1:
-#         return len(primes)
-#     for i in range(2, n + 1):
-#         prime = True
-#         for multiple in range(2, i):
-#             if i % multiple == 0:
-#                 prime = False
-#         if prime is True:
-#             total = total * i
-#             if total <= n:
-#                 primes.append(i)
-#             else:
-#                 break
-#     return len(primes)
+    # primes = []
+    # total = 1
+    # if n == 1:
+    #     return len(primes)
+    # for i in range(2, n + 1):
+    #     prime = True
+    #     for multiple in range(2, i):
+    #         if i % multiple == 0:
+    #             prime = False
+    #     if prime is True:
+    #         total = total * i
+    #         if total <= n:
+    #             primes.append(i)
+    #         else:
+    #             break
+    # return len(primes)
 
 
 # def test_unique_prime_factor():
