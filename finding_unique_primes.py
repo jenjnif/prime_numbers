@@ -3,11 +3,17 @@
 # belong to any number less than 500).
 
 
-def find_primes(n):
+def unique_prime_factors(n):
     primes = []
+    total = 1
+    if n == 1:
+        return 0
     for i in range(2, n):
         if is_prime(i):
-            primes.append(i)
+            total = total * i
+            if total < n:
+                primes.append(i)
+    print(primes)
     return(primes)
 
 
@@ -19,12 +25,8 @@ def is_prime(x):
     return prime
 
 
-def unique_prime_factors():
-    pass
-
-
-def test_list_prime_to_n():
-    assert find_primes(20) == [2, 3, 5, 7, 11, 13, 17, 19]
+def test_return_prime():
+    assert is_prime(5) is True
 
 
 def test_unique_prime_factor():
