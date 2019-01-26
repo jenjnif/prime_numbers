@@ -23,6 +23,24 @@ def is_prime(x):
             prime = False
     return prime
 
+# ALL IN ONE FUNCTION
+
+# def unique_prime_factors(n):
+#     primes = []
+#     total = 1
+#     if n == 1:
+#         return 0
+#     for i in range(2, n):
+#         prime = True
+#         for multiple in range(2, i):
+#             if i % multiple == 0:
+#                 prime = False
+#         if prime is True:
+#             total = total * i
+#             if total < n:
+#                 primes.append(i)
+#     return primes
+
 
 def test_return_prime():
     assert is_prime(5) is True
