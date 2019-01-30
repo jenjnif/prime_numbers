@@ -1,18 +1,20 @@
-def unique_prime_factors(n):
-    primes = []
-    for i in range(2, n + 1):
-        prime = True
-        for multiple in range(2, i):
-            if i % multiple == 0:
-                prime = False
-        if prime is True:
-            primes.append(i)
-
-    print(primes)
-    return primes
+# list all the numbers from 1 to n using for loop
+def list_numbers(n):
+    numbers = []
+    for i in range(n):
+        numbers.append(i)
+    return numbers
 
 
-unique_prime_factors(10)
+print(list_numbers(10))
 
 
+# list all the numbers from 1 to n using recursion
+def rec_list_numbers(n):
+    print(n)
+    if n == 0:
+        return []
+    return rec_list_numbers(n-1) + [n]
 
+
+print(rec_list_numbers(10))
